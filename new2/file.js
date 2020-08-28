@@ -15,11 +15,11 @@ const signURL = async (url, ts, deviceId) => {
 // You need to source these using a man-in-the-middle proxy such as mitmproxy,
 // CharlesProxy or PacketCapture (Android)
 const params = getRequestParams({
-  device_id: '6737916265103345157',
-  // fp: '<device_fingerprint>',
-  fp: '',
-  iid: '6737916937165326085',
-  openudid: '5c33af6a989ca7d2',
+  	device_id: '6737916265103345157',
+  	// fp: '<device_fingerprint>',
+  	fp: '',
+  	iid: '6737916937165326085',
+  	openudid: '5c33af6a989ca7d2',
 });
 
 const api = new TikTokAPI(params, { signURL });
@@ -33,12 +33,5 @@ const api = new TikTokAPI(params, { signURL });
 	  	.then(res => console.log(res.data))
 	  	.catch(console.log(err));
 
- 	//  	api.searchUsers({
-	//   		keyword: 'example',
-	//   		count: 10,
-	//   		cursor: 0,
-	// 		})
- 	//  	.then(res => console.log(res.data))
- 	//  	.catch( console.log(err));
-
+  
 	// You are now able to make successful requests
