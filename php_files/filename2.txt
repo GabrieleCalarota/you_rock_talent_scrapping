@@ -1,0 +1,1 @@
+INSERT INTO  tiktok_data (user_id,description,fans) VALUES ('6656213732236738566','\nonly FF fan','11500')
